@@ -1,0 +1,9 @@
+{
+  "name": "takenlijst",
+  "version": "1.0.0",
+  "description": "A simple to-do list that saves your tasks in the browser.",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}

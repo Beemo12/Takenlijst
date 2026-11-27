@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Takenlijst</title>
+  <meta name="description" content="Een simpele takenlijst die je taken in je browser bewaart.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Takenlijst</h1>
+      <p class="summary" id="summary" aria-live="polite"></p>
+    </header>
+
+    <form class="new-task" id="new-task">
+      <label for="new-title" class="visually-hidden">Nieuwe taak</label>
+      <input id="new-title" placeholder="Wat moet er gebeuren?" autocomplete="off" maxlength="200">
+      <button type="submit">Toevoegen</button>
+    </form>
+
+    <nav class="filters" aria-label="Filter taken">
+      <button data-filter="alles" aria-pressed="true">Alles</button>
+      <button data-filter="open" aria-pressed="false">Open</button>
+      <button data-filter="klaar" aria-pressed="false">Klaar</button>
+    </nav>
+
+    <ul class="list" id="list"></ul>
+    <p class="empty" id="empty" hidden></p>
+
+    <footer class="list-footer" id="list-footer" hidden>
+      <button class="text-button" id="clear-done">Afgeronde taken verwijderen</button>
+    </footer>
+
+    <p class="hint">Dubbelklik op een taak om hem te wijzigen. Je taken worden in deze browser bewaard.</p>
+  </main>
+
+  <script src="js/tasks.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
