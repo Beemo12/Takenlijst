@@ -4,7 +4,7 @@ A simple to-do list ("takenlijst" is Dutch for task list) built with plain HTML,
 
 **[Try it live](https://beemo12.github.io/Takenlijst/)**
 
-<!-- Add a screenshot: drag an image into this file on GitHub -->
+<img width="772" height="652" alt="takenlijst foto" src="https://github.com/user-attachments/assets/a5058cc4-8fa7-4cae-b79c-0bb155dc6f8b" />
 
 ## Features
 
